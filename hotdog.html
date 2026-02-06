@@ -7,39 +7,40 @@
     html, body {
       margin: 0;
       height: 100%;
-      overflow: hidden;
     }
 
     body {
       background: url("hotdog_rickroll.gif") center center / cover no-repeat fixed;
-      display: flex;
-      align-items: center;
-      justify-content: center;
       font-family: Arial, sans-serif;
     }
 
+    /* dark overlay so text is readable */
+    .overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.45);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
     .text {
-      background: rgba(0, 0, 0, 0.75);
+      background: rgba(0, 0, 0, 0.8);
       color: white;
       padding: 32px 56px;
       font-size: 3rem;
       font-weight: bold;
       text-align: center;
-      border-radius: 14px;
-      box-shadow: 0 0 30px black;
-      animation: pulse 1.5s ease-in-out infinite;
-    }
-
-    @keyframes pulse {
-      0% { transform: scale(1); }
-      50% { transform: scale(1.05); }
-      100% { transform: scale(1); }
+      border-radius: 12px;
+      box-shadow: 0 0 25px black;
     }
   </style>
 </head>
 <body>
-  <div class="text">
-    YOU’VE BEEN HOTDOGGED
+  <div class="overlay">
+    <div class="text">
+      YOU’VE BEEN HOTDOGGED
+    </div>
   </div>
 </body>
 </html>
