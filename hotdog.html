@@ -8,36 +8,32 @@
       margin: 0;
       height: 100%;
       overflow: hidden;
-      font-family: Arial, sans-serif;
     }
 
     body {
-      background: repeating-linear-gradient(
-        45deg,
-        #ff0080,
-        #ff0080 20px,
-        #00ffff 20px,
-        #00ffff 40px
-      );
-      animation: scroll 2s linear infinite;
+      background: url("hotdog_rickroll.gif") center center / cover no-repeat fixed;
       display: flex;
       align-items: center;
       justify-content: center;
-    }
-
-    @keyframes scroll {
-      from { background-position: 0 0; }
-      to { background-position: 400px 400px; }
+      font-family: Arial, sans-serif;
     }
 
     .text {
-      background: rgba(0, 0, 0, 0.7);
+      background: rgba(0, 0, 0, 0.75);
       color: white;
-      padding: 30px 50px;
+      padding: 32px 56px;
       font-size: 3rem;
+      font-weight: bold;
       text-align: center;
-      border-radius: 10px;
-      box-shadow: 0 0 20px black;
+      border-radius: 14px;
+      box-shadow: 0 0 30px black;
+      animation: pulse 1.5s ease-in-out infinite;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+      100% { transform: scale(1); }
     }
   </style>
 </head>
