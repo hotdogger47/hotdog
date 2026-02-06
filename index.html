@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Make Your Choice</title>
+  <style>
+    html, body {
+      margin: 0;
+      height: 100%;
+      font-family: Arial, sans-serif;
+      cursor: pointer;
+    }
+
+    .container {
+      display: flex;
+      height: 100vh;
+    }
+
+    .side {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 3rem;
+      text-transform: lowercase;
+      user-select: none;
+      transition: opacity 0.2s ease;
+    }
+
+    .side:hover {
+      opacity: 0.85;
+    }
+
+    .left {
+      background: black;
+      color: white;
+    }
+
+    .right {
+      background: white;
+      color: black;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="side left" onclick="location.href='hell.html'">
+      one hotdog
+    </div>
+    <div class="side right" onclick="location.href='hotdog.html'">
+      two hotdogs
+    </div>
+  </div>
+</body>
+</html>
